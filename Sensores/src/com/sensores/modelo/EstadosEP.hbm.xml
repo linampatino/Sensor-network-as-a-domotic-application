@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.sensores.modelo.EstadosEP" table="estados_ep">
+       <id name="id">
+          <generator class="identity"/>
+       </id>
+       <many-to-one name="ep" column="id_sensor" class="com.sensores.modelo.Sensor"/>
+	   <many-to-one name="idEstado" column="id_estado" class="com.sensores.modelo.Estado"/>
+	</class>
+</hibernate-mapping>

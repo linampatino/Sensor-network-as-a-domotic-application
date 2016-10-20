@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.sensores.modelo.Sensor" table="sensores">
+       <id name="id">
+			<generator class="identity"/>
+       </id>
+       <property name="mac"/>
+       <property name="ep"/>
+       <property name="ubicacion"/>
+       <property name="comandoInfo" column="comando_info"/>
+       <property name="comandoCambio" column="comando_cambio"/>
+       <property name="div"/>
+       <property name="asociado"/>
+	</class>
+</hibernate-mapping>

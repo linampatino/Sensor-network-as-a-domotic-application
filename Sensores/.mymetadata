@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Sensores"
+  id="myeclipse.1215287758828"
+  context-root="/Sensores"
+  j2ee-spec="1.4"
+  archive="Sensores.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

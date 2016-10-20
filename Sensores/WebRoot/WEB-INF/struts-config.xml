@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  
+  <form-beans>
+  
+    <form-bean name="cambiarBombilloForm" type="org.apache.struts.action.DynaActionForm">
+    	<form-property name="ep" type="java.lang.Integer" />
+    </form-bean>
+    
+    <form-bean name="eliminarAlertaForm" type="org.apache.struts.action.DynaActionForm">
+    </form-bean>
+    
+    <form-bean name="alertasForm" type="org.apache.struts.action.DynaActionForm">
+    	<form-property name="ep" type="java.lang.Integer" />
+    	<form-property name="listadoCelulares" type="java.lang.Integer[]" />
+    	<form-property name="listadoEstados" type="java.lang.Integer[]" />
+    	<form-property name="opcion" type="java.lang.String" />
+    	<form-property name="opcionCel" type="java.lang.String" />
+    	<form-property name="celular" type="java.lang.String" />
+    	<form-property name="agregar" type="java.lang.String" />
+    </form-bean>
+    
+    
+ </form-beans>
+  
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      attribute="cambiarBombilloForm"
+      input="/bombillos.jsp"
+      name="cambiarBombilloForm"
+      path="/cambiarBombillo"
+      scope="request"
+      type="com.sensores.action.CambiarBombilloAction">
+      <forward name="continuar" path="/bombillos.jsp" />
+    </action>
+    <action
+      attribute="alertasForm"
+      name="alertasForm"
+      path="/alertas"
+      input="/alertas.jsp"
+      scope="request"
+      type="com.sensores.action.AlertasAction" >
+      <forward name="continuar" path="/alertas.jsp" />
+	</action>
+	
+    <action
+      attribute="eliminarAlertaForm"
+      input="/alertas.jsp"
+      name="eliminarAlertaForm"
+      path="/eliminarAlerta"
+      scope="request"
+      type="com.sensores.action.EliminarAlertaAction">
+      <forward name="continuar" path="/alertas.jsp" />
+    </action>
+    <action
+      attribute="cambiarPersianaForm"
+      input="/persiana.jsp"
+      name="cambiarPersianaForm"
+      path="/cambiarPersiana"
+      scope="request"
+      type="com.sensores.action.CambiarPersianaAction">
+      <forward name="continuar" path="/persiana.jsp" />
+    </action>
+  </action-mappings>
+
+  <message-resources parameter="com.sensores.ApplicationResources" />
+</struts-config>
+

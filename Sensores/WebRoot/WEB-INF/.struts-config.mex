@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/cambiarBombillo.do" location="50,50" dimension="219,88" />
+  <StrutsActivity path="/alertas.do" location="435,-30" dimension="206,88" />
+  <StrutsActivity path="/eliminarAlerta.do" location="435,315" dimension="237,88" />
+  <StrutsActivity path="/cambiarPersiana.do" location="30,210" dimension="252,88" />
+  <StrutsActivity path="/bombillos.jsp" location="285,-30" dimension="94,49" />
+  <StrutsActivity path="/alertas.jsp" location="480,150" dimension="84,49" />
+  <StrutsActivity path="/persiana.jsp" location="105,420" dimension="92,49" />
+  <StrutsActivity path="alertas.jsp" location="950,250" dimension="80,49" />
+  <StrutsTransition id="/cambiarBombillo.do,exito,/bombillos.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="269,114" />
+      <AbsolutePoint location="332,114" />
+      <AbsolutePoint location="332,19" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/eliminarAlerta.do,exito,/alertas.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="615,315" />
+      <AbsolutePoint location="495,199" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/persiana.jsp,null,/cambiarPersiana.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="151,420" />
+      <AbsolutePoint location="151,298" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/eliminarAlerta.do,continuar,/alertas.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="549,315" />
+      <AbsolutePoint location="549,199" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cambiarPersiana.do,continuar,/persiana.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="181,298" />
+      <AbsolutePoint location="181,420" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/eliminarAlerta.do,exito,/inicio.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="553,315" />
+      <AbsolutePoint location="168,214" />
+      <AbsolutePoint location="650,214" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/alertas.jsp,null,/eliminarAlerta.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="519,199" />
+      <AbsolutePoint location="519,315" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cambiarBombillo.do,continuar,/bombillos.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="269,84" />
+      <AbsolutePoint location="332,84" />
+      <AbsolutePoint location="332,19" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/inicio.do,continuar,/alertas.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="762,150" />
+      <AbsolutePoint location="762,-120" />
+      <AbsolutePoint location="332,-120" />
+      <AbsolutePoint location="332,114" />
+      <AbsolutePoint location="362,114" />
+      <AbsolutePoint location="492,150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cambiarBombillo.do,error,/bombillos.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="269,84" />
+      <AbsolutePoint location="302,84" />
+      <AbsolutePoint location="302,19" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/alertas.do,continuar,/alertas.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="538,58" />
+      <AbsolutePoint location="538,150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bombillos.jsp,null,/cambiarBombillo.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="285,-5" />
+      <AbsolutePoint location="159,-5" />
+      <AbsolutePoint location="159,50" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/eliminarAlerta.do,exito,/inicio.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="553,315" />
+      <AbsolutePoint location="168,214" />
+      <AbsolutePoint location="650,214" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/alertas.jsp,null,/alertas.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="508,150" />
+      <AbsolutePoint location="508,58" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cambiarPersiana.do,exito,/persiana.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="156,298" />
+      <AbsolutePoint location="501,495" />
+      <AbsolutePoint location="197,465" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cambiarPersiana.do,error,/persiana.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="30,285" />
+      <AbsolutePoint location="197,435" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
